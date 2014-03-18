@@ -1,0 +1,14 @@
+{
+  "name": "www.kimpddev.com",
+  "version": "0.0.1",
+  "description": "",
+  "main": "app.js",
+  "repository": "",
+  "author": "Kim PD <kimpddev@gmail.com>",
+  "dependencies": {
+    "async": "~0.2.10",
+    "express": "~3.2.6",
+    "socket.io": "~0.9.16",
+    "supervisor": "~0.5.7"
+  }
+}

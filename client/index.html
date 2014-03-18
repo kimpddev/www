@@ -1,0 +1,145 @@
+
+<!DOCTYPE html>
+<html>
+	<title>KIMPD Dev Studio</title>
+
+	<meta charset="utf-8">
+	
+	<link rel="chrome-webstore-item" href="https://chrome.google.com/webstore/detail/khejhnppabfeogdfookcjkbfkkeejcbj">
+	<script src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
+	<link rel="stylesheet" type="text/css" href="index.css">
+	<script src="index.js"></script>
+	
+	<script>
+	  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+	  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+	  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+	  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+	  ga('create', 'UA-48659743-3', 'kimpddev.com');
+	  ga('send', 'pageview');
+	</script>
+<body>
+	<div class="header">
+		<div class="logo"><a href="/"><img src="http://i.imgur.com/f31iXXm.png"></a></div>
+
+		<div class="social">
+			<!-- Facebook like -->
+			<div class="social-item">
+				<div class="fb-like" data-href="http://kimpddev.com/" data-layout="button_count" data-action="like" data-show-faces="true" data-share="true"></div>
+				<div id="fb-root"></div>
+				<script>(function(d, s, id) {
+				  var js, fjs = d.getElementsByTagName(s)[0];
+				  if (d.getElementById(id)) return;
+				  js = d.createElement(s); js.id = id;
+				  js.src = "//connect.facebook.net/ko_KR/all.js#xfbml=1";
+				  fjs.parentNode.insertBefore(js, fjs);
+				}(document, 'script', 'facebook-jssdk'));</script>
+			</div>
+			<!-- Google +1 -->
+			<div class="social-item" style="margin-left:20px">
+				<div class="g-plusone" data-size="small"></div>
+				<script type="text/javascript">
+				  window.___gcfg = {lang: 'ko'};
+
+				  (function() {
+					var po = document.createElement('script'); po.type = 'text/javascript'; po.async = true;
+					po.src = 'https://apis.google.com/js/platform.js';
+					var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(po, s);
+				  })();
+				</script>
+			</div>
+			<!-- Twitter Follow -->
+			<div class="social-item" style="margin-right:10px">
+				<div style="padding-top:3px;"><a href="https://twitter.com/kimpddev" class="twitter-follow-button" data-show-count="false" data-lang="ko">@kimpddev 님 팔로우하기</a></div>
+				<script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+'://platform.twitter.com/widgets.js';fjs.parentNode.insertBefore(js,fjs);}}(document, 'script', 'twitter-wjs');</script>
+			</div>
+		</div>
+	</div>
+	<div class="contents">
+		<ul class="product-list">
+			<li class="bg-emerland">
+				<div class="info">
+					<div class="title">네이버 뉴스 +</div>
+					<div class="sub-title">확장 프로그램</div>
+					<div class="sub-title">지원 브라우저 : 크롬, 사파리</div>
+					<div class="desc">
+						네이버 뉴스를 더욱 편하게 볼 수 있는 다양한 기능을 제공합니다.<br>
+						기능이 지속적으로 추가 될 예정입니다.<br>
+						<br>
+						주요 기능<br>
+						- 네이버 뉴스의 카테고리(정치,경제,사회,생활/문화,세계,IT/과학,연예) 메인의 제목만 표시되는 단순한 기사 목록을 사진과 기사일부가 함께 표시되도록 변경<br>
+					</div>
+					<div class="download">
+						<a href="javascript:" onclick="installChromeNewsPlusExtension();"><img src="http://i.imgur.com/LAaVOnH.png" width="200" height="57"></a>
+						&nbsp;&nbsp;
+						<a href="javascript:" onclick="installSafariNewsPlusExtension();"><img src="http://i.imgur.com/ydvJDsB.png" width="200" height="57"></a>
+					</div>
+				</div>
+				<div class="screenshot">
+					<img src="http://i.imgur.com/p7GIX7A.png" width="543" height="340">
+				</div>
+			</li>
+			
+			<li class="bg-green">
+				<div class="info">
+					<div class="title">네이버 실시간 검색어</div>
+					<div class="sub-title">확장 프로그램</div>
+					<div class="sub-title">지원 브라우저 : 크롬, 사파리</div>
+					<div class="desc">
+						크롬 또는 사파리에서 네이버의 실시간 급상승 검색어를 간편하게 확인할 수 있습니다.<br>
+						또한, 선택된 단어를 네이버에서 검색할 수 있는 기능도 제공합니다.<br>
+						<br>
+						주요 기능<br>
+						- 네이버 실시간 급상승 검색어 기능<br>
+						- 간단 검색 기능<br>
+						- 선택 단어 검색 기능 (마우스 우클릭 메뉴)<br>
+						- 실시간 업데이트<br>
+					</div>
+					<div class="download">
+						<a href="javascript:" onclick="installChromeExtension();"><img src="http://i.imgur.com/LAaVOnH.png" width="200" height="57"></a>
+						&nbsp;&nbsp;
+						<a href="javascript:" onclick="installSafariExtension();"><img src="http://i.imgur.com/ydvJDsB.png" width="200" height="57"></a>
+					</div>
+				</div>
+				<div class="screenshot">
+					<img src="http://i.imgur.com/NS9BOti.png" width="543" height="340">
+				</div>
+			</li>
+			
+			<li class="bg-orange">
+				<div class="info">
+					<div class="title">네이버 실시간 검색어 - 툴바</div>
+					<div class="sub-title">확장 프로그램</div>
+					<div class="sub-title">지원 브라우저 : 사파리</div>
+					<div class="desc">
+						사파리에서 툴바에서 네이버 실시간 급상승 검색어를 간편하게 확인할 수 있습니다.<br>
+						<br>
+						주요 기능<br>
+						- 네이버 실시간 급상승 검색어 기능<br>
+						- 새로 진입한 인기 검색어 노랑색으로 표시<br>
+						- 실시간 업데이트<br>
+					</div>
+					<div class="download">
+						<a href="javascript:" onclick="installSafariToolbar();"><img src="http://i.imgur.com/ydvJDsB.png" width="200" height="57"></a>
+					</div>
+				</div>
+				<div class="screenshot">
+					<img src="http://i.imgur.com/aFnJWZ4.png" width="543" height="340">
+				</div>
+			</li>
+		</ul>
+	</div>
+	
+	<div class="footer bg-midnight-blue">
+		<table>
+			<tbody>
+				<tr>
+					<td>Copyright © 2014 KIMPD Dev Studio</td>
+					<td align=right><a href="mailto:kimpddev@gmail.com">kimpddev@gmail.com</a></td>
+				</tr>
+			</tbody>
+		</table>
+	</div>
+</body>
+</html>
